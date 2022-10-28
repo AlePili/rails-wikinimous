@@ -1,0 +1,16 @@
+<div class="container py-5 md-5">
+<div class="text-center">
+    <h1> Create an article </h1>
+</div>
+    <div class="container py-5 md-5">
+        </div class="aligne-item-center">
+        <%= simple_form_for @article do |f| %>
+                <%= f.input :title, placeholder: 'Type here' %>
+                <%= f.input :content %>
+                <%= f.submit class: 'btn btn-primary' %>
+        <% end %>
+        </div>
+   </div>
+
+   <%= link_to "Go back", articles_path, class: "btn btn-secondary" %>
+</div>
